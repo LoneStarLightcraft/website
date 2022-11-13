@@ -9,22 +9,22 @@ export const Founders: React.FunctionComponent = () => {
   const gridData = [
     {
       title: "Alec Gonzales",
-      caption: "CEO & Patron Saint of the 2nd Amendment",
+      caption: "CEO & patron saint of the 2nd Amendment",
       image: GunGuy,
     },
     {
       title: "Adan Rodriguez",
-      caption: "CFO & Patron Saint of the 2nd Amendment",
+      caption: "CFO & could probably rap circles around you",
       image: Shades,
     },
     {
       title: "Juan Diaz",
-      caption: "CEO & Patron Saint of the 2nd Amendment",
+      caption: "COO & knows what to do with his hands",
       image: Boatman,
     },
     {
       title: "James Opara",
-      caption: "CTO & Enthusiast of Exotic Meats ",
+      caption: "CTO & Enthusiast of exotic eats ",
       image: Shop,
     },
   ];
@@ -67,7 +67,9 @@ export const Founders: React.FunctionComponent = () => {
             sx={{
               margin: 5,
               border: "none",
+              borderRadius: "0px",
               minWidth: "600px",
+              width: "605px",
             }}
           >
             <CardMedia

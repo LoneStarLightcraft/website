@@ -1,13 +1,13 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import Logo from "../Images/LoneStar.png";
+import Banner from "../Images/Holitdine.png";
 
 export const HomeHeader: React.FunctionComponent = () => {
   return (
     <>
       <Box
         sx={{
-          backgroundImage: `url(${Logo})`,
+          backgroundImage: `url(${Banner})`,
           backgroundSize: "cover",
           backgroundAttachment: "fixed",
           backgroundPosition: "center",
@@ -20,14 +20,16 @@ export const HomeHeader: React.FunctionComponent = () => {
           sx={{
             position: "absolute",
             top: "27%",
-            left: "5%",
+            left: "2%",
           }}
         >
           <Typography
             sx={{
+              textDecorationColor: "#2c3531",
               fontSize: "4rem",
               fontFamily: "Oswald, sans-serif",
-              color: "white",
+              fontWeight: "bold",
+              color: "#2c3531",
               textTransform: "uppercase",
             }}
           >
@@ -59,7 +61,7 @@ export const HomeHeader: React.FunctionComponent = () => {
             fontFamily: "Oswald, sans-serif",
             fontWeight: "normal",
             color: "#2c3531",
-            paddingY: "2rem",
+            paddingY: "1rem",
             paddingX: "1rem",
           }}
         >
