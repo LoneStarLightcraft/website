@@ -1,6 +1,13 @@
+import { Container } from "@mui/material";
 import React from "react";
-import { HomeHeader } from ".";
+import { Founders, HomeGallery, HomeHeader } from ".";
 
 export const Home: React.FunctionComponent = () => {
-  return <HomeHeader />;
+  return (
+    <Container maxWidth={false} sx={{ flexDirection: "column" }}>
+      <HomeHeader />
+      <HomeGallery />
+      <Founders />
+    </Container>
+  );
 };
