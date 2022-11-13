@@ -1,6 +1,8 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
-import Shop from "../Images/ShopImage.png";
+import Rocket from "../Images/WeHaveAProblem.png";
+import Rabbit from "../Images/Wabbits.png";
+import Cowork from "../Images/Coworking.png";
 
 export const HomeGallery: React.FunctionComponent = () => {
   return (
@@ -19,7 +21,7 @@ export const HomeGallery: React.FunctionComponent = () => {
           textTransform: "uppercase",
           textAlign: "center",
           fontFamily: "Oswald, sans-serif",
-          color: "#116466",
+          color: "#2c3531",
           paddingY: "8rem",
           paddingX: "1rem",
         }}
@@ -42,12 +44,18 @@ export const HomeGallery: React.FunctionComponent = () => {
             flexDirection: "row-reverse",
           }}
         >
-          <img height="400" width="50%" src={Shop} alt="Paella dish" />
+          <img
+            style={{ objectFit: "cover" }}
+            height="400"
+            width="50%"
+            src={Rocket}
+            alt="Paella dish"
+          />
           <Box
             sx={{
               flexGrow: 2,
               display: "flex",
-              borderLeft: "solid 0.1px #116466",
+              borderLeft: "solid 0.1px #2c3531",
               justifyContent: "center",
               alignItems: "center",
               paddingBottom: 0,
@@ -62,7 +70,7 @@ export const HomeGallery: React.FunctionComponent = () => {
                 fontSize: "3rem",
                 fontFamily: "Oswald, sans-serif",
                 fontWeight: "bold",
-                color: "#116466",
+                color: "#2c3531",
                 paddingY: "2rem",
                 paddingX: "1rem",
               }}
@@ -80,12 +88,18 @@ export const HomeGallery: React.FunctionComponent = () => {
             flexDirection: "row",
           }}
         >
-          <img height="400" width="50%" src={Shop} alt="Paella dish" />
+          <img
+            style={{ objectFit: "cover" }}
+            height="400"
+            width="50%"
+            src={Cowork}
+            alt="Paella dish"
+          />
           <Box
             sx={{
               flexGrow: 2,
               display: "flex",
-              borderRight: "solid 0.1px #116466",
+              borderRight: "solid 0.1px #2c3531",
               justifyContent: "center",
               alignItems: "center",
               paddingBottom: 0,
@@ -101,7 +115,7 @@ export const HomeGallery: React.FunctionComponent = () => {
                 fontSize: "3rem",
                 fontFamily: "Oswald, sans-serif",
                 fontWeight: "bold",
-                color: "#116466",
+                color: "#2c3531",
                 paddingY: "2rem",
                 paddingX: "1rem",
               }}
@@ -118,12 +132,12 @@ export const HomeGallery: React.FunctionComponent = () => {
             flexDirection: "row-reverse",
           }}
         >
-          <img height="400" width="50%" src={Shop} alt="Paella dish" />
+          <img height="400" width="50%" src={Rabbit} alt="Paella dish" />
           <Box
             sx={{
               flexGrow: 2,
               display: "flex",
-              borderLeft: "solid 0.1px #116466",
+              borderLeft: "solid 0.1px #2c3531",
               justifyContent: "center",
               alignItems: "center",
               paddingBottom: 0,
@@ -138,7 +152,7 @@ export const HomeGallery: React.FunctionComponent = () => {
                 fontSize: "3rem",
                 fontFamily: "Oswald, sans-serif",
                 fontWeight: "bold",
-                color: "#116466",
+                color: "#2c3531",
                 paddingY: "2rem",
                 paddingX: "1rem",
               }}
