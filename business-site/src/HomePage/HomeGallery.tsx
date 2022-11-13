@@ -6,7 +6,6 @@ export const HomeGallery: React.FunctionComponent = () => {
   return (
     <Box
       sx={{
-        // background: "rgba(217, 176, 140, 0.5)",
         backgroundSize: "cover",
         width: "100%",
         minHeight: "600px",
@@ -48,7 +47,7 @@ export const HomeGallery: React.FunctionComponent = () => {
             sx={{
               flexGrow: 2,
               display: "flex",
-              border: "solid 0.1px #116466",
+              borderLeft: "solid 0.1px #116466",
               justifyContent: "center",
               alignItems: "center",
               paddingBottom: 0,
@@ -86,7 +85,7 @@ export const HomeGallery: React.FunctionComponent = () => {
             sx={{
               flexGrow: 2,
               display: "flex",
-              border: "solid 0.1px #116466",
+              borderRight: "solid 0.1px #116466",
               justifyContent: "center",
               alignItems: "center",
               paddingBottom: 0,
@@ -124,7 +123,7 @@ export const HomeGallery: React.FunctionComponent = () => {
             sx={{
               flexGrow: 2,
               display: "flex",
-              border: "solid 0.1px #116466",
+              borderLeft: "solid 0.1px #116466",
               justifyContent: "center",
               alignItems: "center",
               paddingBottom: 0,

@@ -1,6 +1,6 @@
 import { Container } from "@mui/material";
 import React from "react";
-import { Founders, HomeGallery, HomeHeader } from ".";
+import { Footer, Founders, HomeGallery, HomeHeader } from ".";
 
 export const Home: React.FunctionComponent = () => {
   return (
@@ -8,6 +8,7 @@ export const Home: React.FunctionComponent = () => {
       <HomeHeader />
       <HomeGallery />
       <Founders />
+      <Footer />
     </Container>
   );
 };
