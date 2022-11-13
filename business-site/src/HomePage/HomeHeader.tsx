@@ -26,6 +26,7 @@ export const HomeHeader: React.FunctionComponent = () => {
           <Typography
             sx={{
               textDecorationColor: "#2c3531",
+              textShadow: "3px 3px 3px #d9b08c",
               fontSize: "4rem",
               fontFamily: "Oswald, sans-serif",
               fontWeight: "bold",

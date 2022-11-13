@@ -96,7 +96,7 @@ export const Founders: React.FunctionComponent = () => {
                   textAlign: "center",
                   fontSize: "1.7rem",
                   fontFamily: "Oswald, sans-serif",
-                  color: "#d9b08c",
+                  color: "#ffffff",
                   paddingY: "2rem",
                   paddingX: "1rem",
                 }}
