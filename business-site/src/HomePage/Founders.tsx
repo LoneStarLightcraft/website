@@ -4,6 +4,7 @@ import GunGuy from "../Images/Gunguy.png";
 import Shades from "../Images/GlassesMuscles.png";
 import Boatman from "../Images/BoatJuan.png";
 import Shop from "../Images/ShopImage.png";
+import Banner from "../Images/Holitdine.png";
 
 export const Founders: React.FunctionComponent = () => {
   const gridData = [
@@ -30,85 +31,99 @@ export const Founders: React.FunctionComponent = () => {
   ];
 
   return (
-    <Box
-      sx={{
-        background: "rgba(217, 176, 140, 0.5)",
-        backgroundSize: "cover",
-        width: "100%",
-        minHeight: "600px",
-        marginTop: 2,
-      }}
-    >
-      <Typography
-        variant="h2"
-        component="div"
-        sx={{
-          textTransform: "uppercase",
-          textAlign: "center",
-          fontFamily: "Oswald, sans-serif",
-          color: "#116466",
-          paddingTop: "8rem",
-          paddingBottom: "4rem",
-          paddingX: "1rem",
-        }}
-      >
-        Who we are
-      </Typography>
+    <>
       <Box
         sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "flex-end",
-          flexWrap: "wrap",
+          backgroundImage: `url(${Banner})`,
+          backgroundSize: "cover",
+          backgroundAttachment: "fixed",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          width: "100%",
+          minHeight: "550px",
+        }}
+      ></Box>
+      <Box
+        sx={{
+          background: "#116466",
+          backgroundSize: "cover",
+          width: "100%",
+          minHeight: "600px",
         }}
       >
-        {gridData.map((grid) => (
-          <Card
-            sx={{
-              margin: 5,
-              border: "none",
-              borderRadius: "0px",
-              minWidth: "600px",
-              width: "605px",
-            }}
-          >
-            <CardMedia
-              component="img"
-              height="320"
-              image={grid.image}
-              alt="Paella dish"
-            />
-            <CardContent
+        <Typography
+          variant="h2"
+          component="div"
+          sx={{
+            textTransform: "uppercase",
+            textAlign: "center",
+            fontFamily: "Oswald, sans-serif",
+            color: "white",
+            //   color: "rgba(217, 176, 140, 1)",
+            paddingTop: "3rem",
+            paddingBottom: "1rem",
+            paddingX: "1rem",
+            textShadow: "3px 3px 3px #2c3531",
+          }}
+        >
+          Who we are
+        </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "flex-end",
+            flexWrap: "wrap",
+          }}
+        >
+          {gridData.map((grid) => (
+            <Card
               sx={{
+                margin: 5,
                 border: "none",
-                boxShadow: 0,
-                paddingBottom: 0,
-                paddingTop: 0,
-                transition: "background 250ms ease",
-
-                backgroundColor: "#000000",
-
-                "&:last-child": { padding: 0 },
+                borderRadius: "0px",
+                minWidth: "300px",
+                width: "605px",
               }}
             >
-              <Typography
+              <CardMedia
+                component="img"
+                height="320"
+                image={grid.image}
+                alt="Paella dish"
+              />
+              <CardContent
                 sx={{
-                  textAlign: "center",
-                  fontSize: "1.7rem",
-                  fontFamily: "Oswald, sans-serif",
-                  color: "#ffffff",
-                  paddingY: "2rem",
-                  paddingX: "1rem",
+                  border: "none",
+                  boxShadow: 0,
+                  paddingBottom: 0,
+                  paddingTop: 0,
+                  transition: "background 250ms ease",
+
+                  backgroundColor: "#000000",
+
+                  "&:last-child": { padding: 0 },
                 }}
               >
-                <span style={{ fontWeight: 900 }}>{`${grid.title}`}</span>{" "}
-                <br />{" "}
-                <span style={{ fontWeight: 100 }}>{`${grid.caption}`}</span>
-              </Typography>
-            </CardContent>
-          </Card>
-        ))}
+                <Typography
+                  sx={{
+                    textAlign: "center",
+                    fontSize: "1.7rem",
+                    fontFamily: "Oswald, sans-serif",
+                    color: "#ffffff",
+                    paddingY: "2rem",
+                    paddingX: "1rem",
+                  }}
+                >
+                  <span style={{ fontWeight: 900 }}>{`${grid.title}`}</span>{" "}
+                  <br />{" "}
+                  <span style={{ fontWeight: 100 }}>{`${grid.caption}`}</span>
+                </Typography>
+              </CardContent>
+            </Card>
+          ))}
+        </Box>
       </Box>
-    </Box>
+    </>
   );
 };

@@ -20,17 +20,17 @@ export const HomeHeader: React.FunctionComponent = () => {
           sx={{
             position: "absolute",
             top: "27%",
-            left: "2%",
+            left: "3.5%",
           }}
         >
           <Typography
             sx={{
               textDecorationColor: "#2c3531",
-              textShadow: "3px 3px 3px #d9b08c",
+              textShadow: "3px 3px 3px #2c3531",
               fontSize: "4rem",
               fontFamily: "Oswald, sans-serif",
               fontWeight: "bold",
-              color: "#2c3531",
+              color: "#d9b08c",
               textTransform: "uppercase",
             }}
           >
@@ -42,12 +42,10 @@ export const HomeHeader: React.FunctionComponent = () => {
       </Box>
       <Box
         sx={{
-          width: "100%",
           background: "white",
-          opacity: 0.95,
           position: "fixed",
           top: 0,
-          right: 0,
+          left: 0,
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
@@ -63,7 +61,8 @@ export const HomeHeader: React.FunctionComponent = () => {
             fontWeight: "normal",
             color: "#2c3531",
             paddingY: "1rem",
-            paddingX: "1rem",
+            paddingX: "0.5rem",
+            backgroundColor: "rgba(255, 255, 255, 1)",
           }}
         >
           Lone Star
