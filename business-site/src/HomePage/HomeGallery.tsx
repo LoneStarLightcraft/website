@@ -11,7 +11,7 @@ export const HomeGallery: React.FunctionComponent = () => {
         backgroundSize: "cover",
         width: "100%",
         minHeight: "600px",
-        marginTop: 2,
+        marginTop: 1,
       }}
     >
       <Typography
@@ -22,8 +22,9 @@ export const HomeGallery: React.FunctionComponent = () => {
           textAlign: "center",
           fontFamily: "Oswald, sans-serif",
           color: "#2c3531",
-          paddingY: "8rem",
+          paddingY: "3rem",
           paddingX: "1rem",
+          textShadow: "3px 3px 3px #d9b08c",
         }}
       >
         What we do
@@ -67,7 +68,7 @@ export const HomeGallery: React.FunctionComponent = () => {
             <Typography
               sx={{
                 textAlign: "center",
-                fontSize: "3rem",
+                fontSize: "5vh",
                 fontFamily: "Oswald, sans-serif",
                 fontWeight: "bold",
                 color: "#2c3531",
@@ -89,7 +90,7 @@ export const HomeGallery: React.FunctionComponent = () => {
           }}
         >
           <img
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "cover", minWidth: "50%" }}
             height="400"
             width="50%"
             src={Cowork}
@@ -112,7 +113,7 @@ export const HomeGallery: React.FunctionComponent = () => {
             <Typography
               sx={{
                 textAlign: "center",
-                fontSize: "3rem",
+                fontSize: "5vh",
                 fontFamily: "Oswald, sans-serif",
                 fontWeight: "bold",
                 color: "#2c3531",
@@ -149,7 +150,7 @@ export const HomeGallery: React.FunctionComponent = () => {
             <Typography
               sx={{
                 textAlign: "center",
-                fontSize: "3rem",
+                fontSize: "5vh",
                 fontFamily: "Oswald, sans-serif",
                 fontWeight: "bold",
                 color: "#2c3531",
