@@ -3,7 +3,7 @@ import React from "react";
 
 export const Footer: React.FunctionComponent = () => {
   return (
-    <Box sx={{ backgroundColor: "black", minHeight: "200px" }}>
+    <Box sx={{ backgroundColor: "black", minHeight: "250px" }}>
       <Typography
         variant="h4"
         component="div"

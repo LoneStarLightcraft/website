@@ -40,7 +40,7 @@ export const Founders: React.FunctionComponent = () => {
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           width: "100%",
-          minHeight: "550px",
+          minHeight: "500px",
         }}
       ></Box>
       <Box
@@ -58,8 +58,8 @@ export const Founders: React.FunctionComponent = () => {
             textTransform: "uppercase",
             textAlign: "center",
             fontFamily: "Oswald, sans-serif",
+            fontWeight: "bold",
             color: "white",
-            //   color: "rgba(217, 176, 140, 1)",
             paddingTop: "3rem",
             paddingBottom: "1rem",
             paddingX: "1rem",

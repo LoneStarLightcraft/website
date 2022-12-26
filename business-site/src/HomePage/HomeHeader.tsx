@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import Banner from "../Images/Holitdine.png";
+import { Link } from "react-router-dom";
 
 export const HomeHeader: React.FunctionComponent = () => {
   return (
@@ -55,6 +56,8 @@ export const HomeHeader: React.FunctionComponent = () => {
           variant="h4"
           component="div"
           sx={{
+            borderBottom: "solid 1.5px black",
+            borderRight: "solid 1.5px black",
             textTransform: "uppercase",
             fontSize: "1.7rem",
             fontFamily: "Oswald, sans-serif",
@@ -69,6 +72,40 @@ export const HomeHeader: React.FunctionComponent = () => {
           <br /> Lightcraft
         </Typography>
       </Box>
+      <Link to="/contact">
+        <Box
+          sx={{
+            background: "white",
+            position: "fixed",
+            bottom: 0,
+            right: 0,
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+          }}
+        >
+          <Typography
+            variant="h4"
+            component="div"
+            sx={{
+              borderTop: "solid 1.5px black",
+              borderLeft: "solid 1.5px black",
+              textTransform: "uppercase",
+              fontSize: "1.5rem",
+              fontFamily: "Oswald, sans-serif",
+              fontWeight: "normal",
+              color: "#2c3531",
+              paddingY: "1rem",
+              paddingX: "0.5rem",
+              backgroundColor: "rgba(255, 255, 255, 1)",
+            }}
+          >
+            Got an idea?
+            <br />
+            Contact us
+          </Typography>
+        </Box>
+      </Link>
     </>
   );
 };
