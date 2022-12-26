@@ -12,6 +12,7 @@ export const HomeGallery: React.FunctionComponent = () => {
         width: "100%",
         minHeight: "600px",
         marginTop: 1,
+        paddingBottom: 8,
       }}
     >
       <Typography
@@ -19,143 +20,141 @@ export const HomeGallery: React.FunctionComponent = () => {
         component="div"
         sx={{
           textTransform: "uppercase",
+          fontWeight: "bold",
           textAlign: "center",
           fontFamily: "Oswald, sans-serif",
           color: "#2c3531",
           paddingY: "3rem",
           paddingX: "1rem",
-          textShadow: "3px 3px 3px #d9b08c",
         }}
       >
-        What we do
+        Houston's #1 Source for
       </Typography>
       <Box
         sx={{
           display: "flex",
-          justifyContent: "center",
-          alignItems: "flex-end",
+          flexDirection: "row",
           flexWrap: "wrap",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
         <Box
           sx={{
             marginY: 0,
-            minWidth: "95%",
-            display: "flex",
-            flexDirection: "row-reverse",
+            paddingX: 2,
+            flexDirection: "collumn",
+            width: {
+              sm: 400, // 600
+              lg: 450, // 1200
+            },
+            maxWidth: "450px",
           }}
         >
           <img
-            style={{ objectFit: "cover" }}
-            height="400"
-            width="50%"
+            style={{ height: "auto", minHeight: 350, objectFit: "cover" }}
+            width="100%"
             src={Rocket}
             alt="Paella dish"
           />
-          <Box
+
+          <Typography
             sx={{
-              flexGrow: 2,
-              display: "flex",
-              borderLeft: "solid 0.1px #2c3531",
-              justifyContent: "center",
-              alignItems: "center",
-              paddingBottom: 0,
-              paddingTop: 0,
-              transition: "background 250ms ease",
-              "&:last-child": { padding: 0 },
+              textAlign: "center",
+              fontSize: {
+                sm: "2.5vw", // 600
+                lg: "2vw", // 1200
+                xl: "1.75vw", // 1536
+              },
+              fontFamily: "Oswald, sans-serif",
+              fontWeight: "bold",
+              color: "#2c3531",
+              paddingY: "2rem",
+              paddingX: "1rem",
+              whiteSpace: "nowrap",
             }}
           >
-            <Typography
-              sx={{
-                textAlign: "center",
-                fontSize: "5vh",
-                fontFamily: "Oswald, sans-serif",
-                fontWeight: "bold",
-                color: "#2c3531",
-                paddingY: "2rem",
-                paddingX: "1rem",
-              }}
-            >
-              LED Signs & Logos
-            </Typography>
-          </Box>
+            LED Signs & Logos
+          </Typography>
         </Box>
 
         <Box
           sx={{
             marginY: 0,
-            minWidth: "95%",
-            display: "flex",
-            flexDirection: "row",
+            paddingX: 2,
+            flexDirection: "collumn",
+            width: {
+              sm: 400, // 600
+              lg: 450, // 1200
+            },
+            maxWidth: "450px",
           }}
         >
           <img
-            style={{ objectFit: "cover", minWidth: "50%" }}
-            height="400"
-            width="50%"
+            style={{
+              height: "auto",
+              minHeight: 350,
+              objectFit: "cover",
+              minWidth: "50%",
+            }}
+            width="100%"
             src={Cowork}
             alt="Paella dish"
           />
-          <Box
-            sx={{
-              flexGrow: 2,
-              display: "flex",
-              borderRight: "solid 0.1px #2c3531",
-              justifyContent: "center",
-              alignItems: "center",
-              paddingBottom: 0,
-              paddingTop: 0,
-              transition: "background 250ms ease",
 
-              "&:last-child": { padding: 0 },
+          <Typography
+            sx={{
+              textAlign: "center",
+              fontSize: {
+                sm: "2.5vw", // 600
+                lg: "2vw", // 1200
+                xl: "1.78vw", // 1536
+              },
+              fontFamily: "Oswald, sans-serif",
+              fontWeight: "bold",
+              color: "#2c3531",
+              paddingY: "2rem",
+              paddingX: "1rem",
+              whiteSpace: "nowrap",
             }}
           >
-            <Typography
-              sx={{
-                textAlign: "center",
-                fontSize: "5vh",
-                fontFamily: "Oswald, sans-serif",
-                fontWeight: "bold",
-                color: "#2c3531",
-                paddingY: "2rem",
-                paddingX: "1rem",
-              }}
-            >
-              LED Art & Furniture
-            </Typography>
-          </Box>
+            LED Art & Furniture
+          </Typography>
         </Box>
         <Box
           sx={{
             marginY: 0,
-            minWidth: "95%",
-            display: "flex",
-            flexDirection: "row-reverse",
+            paddingX: 2,
+            flexDirection: "collumn",
+            width: {
+              sm: 400, // 600
+              lg: 450, // 1200
+            },
+            maxWidth: "450px",
           }}
         >
-          <img height="400" width="50%" src={Rabbit} alt="Paella dish" />
-          <Box
-            sx={{
-              flexGrow: 2,
-              display: "flex",
-              borderLeft: "solid 0.1px #2c3531",
-              justifyContent: "center",
-              alignItems: "center",
-              paddingBottom: 0,
-              paddingTop: 0,
-              transition: "background 250ms ease",
-              "&:last-child": { padding: 0 },
-            }}
-          >
+          <img
+            style={{ height: "auto", minHeight: 350 }}
+            width="100%"
+            src={Rabbit}
+            alt="Paella dish"
+          />
+
+          <Box>
             <Typography
               sx={{
                 textAlign: "center",
-                fontSize: "5vh",
+                fontSize: {
+                  sm: "2.5vw", // 600
+                  lg: "2vw", // 1200
+                  xl: "1.8vw", // 1536
+                },
                 fontFamily: "Oswald, sans-serif",
                 fontWeight: "bold",
                 color: "#2c3531",
                 paddingY: "2rem",
                 paddingX: "1rem",
+                whiteSpace: "nowrap",
               }}
             >
               Custom LEDs
@@ -163,6 +162,21 @@ export const HomeGallery: React.FunctionComponent = () => {
           </Box>
         </Box>
       </Box>
+      <Typography
+        variant="h2"
+        component="div"
+        sx={{
+          textTransform: "uppercase",
+          fontWeight: "bold",
+          textAlign: "center",
+          fontFamily: "Oswald, sans-serif",
+          color: "#2c3531",
+          paddingY: "3rem",
+          paddingX: "1rem",
+        }}
+      >
+        Satisfy your LED needs
+      </Typography>
     </Box>
   );
 };
