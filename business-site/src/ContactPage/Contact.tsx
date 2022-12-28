@@ -8,48 +8,48 @@ import { Container } from "@mui/system";
 export const Contact: React.FunctionComponent = () => {
   return (
     <Container maxWidth={false} sx={{ flexDirection: "column" }}>
+      <Link to="/">
+        {" "}
+        <Box
+          sx={{
+            background: "white",
+            position: "fixed",
+            top: 0,
+            left: 0,
+          }}
+        >
+          <Typography
+            variant="h4"
+            component="div"
+            sx={{
+              borderBottom: "solid 1.5px black",
+              borderRight: "solid 1.5px black",
+              textTransform: "uppercase",
+              fontSize: "1.7rem",
+              fontFamily: "Oswald, sans-serif",
+              fontWeight: "normal",
+              color: "#2c3531",
+              paddingY: "1rem",
+              paddingX: "0.5rem",
+              backgroundColor: "rgba(255, 255, 255, 1)",
+            }}
+          >
+            Lone Star
+            <br /> Lightcraft
+          </Typography>
+        </Box>
+      </Link>
       <Box
         sx={{
           backgroundColor: "#ffffff",
           width: "100%",
           minHeight: "850px",
+          border: "solid 2px red",
+          display: "flex",
+          flexDirection: "row",
+          flexWrap: "wrap",
         }}
       >
-        <Link to="/">
-          {" "}
-          <Box
-            sx={{
-              background: "white",
-              position: "fixed",
-              top: 0,
-              left: 0,
-              display: "flex",
-              flexDirection: "row",
-              justifyContent: "space-between",
-            }}
-          >
-            <Typography
-              variant="h4"
-              component="div"
-              sx={{
-                borderBottom: "solid 1.5px black",
-                borderRight: "solid 1.5px black",
-                textTransform: "uppercase",
-                fontSize: "1.7rem",
-                fontFamily: "Oswald, sans-serif",
-                fontWeight: "normal",
-                color: "#2c3531",
-                paddingY: "1rem",
-                paddingX: "0.5rem",
-                backgroundColor: "rgba(255, 255, 255, 1)",
-              }}
-            >
-              Lone Star
-              <br /> Lightcraft
-            </Typography>
-          </Box>
-        </Link>
-
         <Box
           sx={{
             marginTop: "9rem",
@@ -75,8 +75,7 @@ export const Contact: React.FunctionComponent = () => {
           <Box
             component="form"
             sx={{
-              width: "50%",
-              marginTop: "2%",
+              marginTop: "10rem",
             }}
           >
             <div>
@@ -115,10 +114,11 @@ export const Contact: React.FunctionComponent = () => {
               variant="filled"
               sx={{
                 width: {
-                  xs: "35ch", // 0
-                  sm: "35ch", // 600
-                  lg: "35ch", // 1200
-                  xl: "71.5ch", // 1536
+                  xs: "35ch", // 360
+                  sm: "35ch", // 540
+                  md: "71.5ch", // 760
+                  lg: "71.5ch", // 900
+                  xl: "71.5ch", // 1635
                 },
                 maxWidth: "81.5ch",
                 m: 1,
