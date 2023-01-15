@@ -175,7 +175,7 @@ export const HomeGallery: React.FunctionComponent = () => {
           paddingX: "1rem",
         }}
       >
-        Satisfy your LED needs
+        Satisfying your LED needs
       </Typography>
     </Box>
   );
