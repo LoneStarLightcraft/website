@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/website/static/css/main.e6c13ad2.css",
+    "main.js": "/website/static/js/main.206f0b71.js",
+    "static/js/787.6d5d4358.chunk.js": "/website/static/js/787.6d5d4358.chunk.js",
+    "static/media/Coworking.png": "/website/static/media/Coworking.17077f7dcc8247aa2836.png",
+    "static/media/Wabbits.png": "/website/static/media/Wabbits.32f7718c8740e0c52abd.png",
+    "static/media/WeHaveAProblem.png": "/website/static/media/WeHaveAProblem.1801fa5016bdad394044.png",
+    "static/media/Holitdine.png": "/website/static/media/Holitdine.a5056aa704bba90df0e2.png",
+    "static/media/BoatJuan.png": "/website/static/media/BoatJuan.68a48d956d4ae0a16fdf.png",
+    "static/media/GlassesMuscles.png": "/website/static/media/GlassesMuscles.24e8249b6a1f3b781059.png",
+    "static/media/Gunguy.png": "/website/static/media/Gunguy.4f9219e230849237ba04.png",
+    "static/media/ShopImage.png": "/website/static/media/ShopImage.029cf5a3810c11f76b1d.png",
+    "index.html": "/website/index.html",
+    "main.e6c13ad2.css.map": "/website/static/css/main.e6c13ad2.css.map",
+    "main.206f0b71.js.map": "/website/static/js/main.206f0b71.js.map",
+    "787.6d5d4358.chunk.js.map": "/website/static/js/787.6d5d4358.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.206f0b71.js"
+  ]
+}
